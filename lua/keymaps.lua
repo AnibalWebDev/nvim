@@ -68,3 +68,14 @@ map("n", "<A-V>", ":Telescope vim_options<CR>")           -- vim options
 map("n", "<A-X>", ":Telescope commands<CR>")              -- vim commands
 map("n", "<A-Z>", ":Telescope colorscheme<CR>")           -- colorschemes
 map("n", "<A-~>", ":Telescope lsp_workspace_symbols<CR>") -- LSP workspace symbols
+
+-- Fugitive
+
+map("n", "<leader>G", ":G<CR>")        -- git status
+map("n", "<leader>Ga", ":G add %<CR>") -- git add %
+map("n", "<leader>Gd", ":Gdiff<CR>")   -- git diff %
+
+-- Vim Dadbod UI
+
+map("n", "<leader>Db", ":DBUIToggle<CR>")        -- toggle vim-dadbod-ui
+map("n", "<leader>Da", ":DBUIAddConnection<CR>") -- add database connection to vim-dadbod-ui
