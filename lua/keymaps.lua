@@ -14,11 +14,14 @@ map("n", "<A-w>", ":wq<CR>")     -- save and quit
 
 -- Misc
 
-map("n", "<C-n>", ":Neotree toggle<CR>")    -- toggle NeoTree file explorer
-map("n", "<A-x>", ":CopilotChatToggle<CR>") -- toggle Copilot Chat
-map("n", "<A-L>", ":Lazy<CR>")              -- open Lazy package manager
-map("n", "<A-%>", ":source %<CR>")          -- source file in current buffer
-map("n", "<A-b>", ":bd<CR>")                -- kill the current buffer
+map("n", "<leader>s", ":%s/")                      -- substitute pattern on all lines
+map("n", "<C-m>", ":Man ")                         -- search manpages
+map("n", "<C-n>", ":Neotree toggle<CR>")           -- toggle NeoTree file explorer
+map("n", "<C-s>", ":Neotree float git_status<CR>") -- NeoTree git status view
+map("n", "<A-x>", ":CopilotChatToggle<CR>")        -- toggle Copilot Chat
+map("n", "<A-L>", ":Lazy<CR>")                     -- open Lazy package manager
+map("n", "<A-%>", ":source %<CR>")                 -- source file in current buffer
+map("n", "<A-b>", ":bd<CR>")                       -- kill the current buffer
 
 -- Word Surrounds
 
