@@ -1,3 +1,6 @@
+-- @param m string: The mode in which the keybinding is active (e.g., "n" for normal mode).
+-- @param k string: The key sequence to bind.
+-- @param v string|function: The command or function to execute when the keybinding is triggered.
 local function map(m, k, v)
 	vim.keymap.set(m, k, v)
 end
