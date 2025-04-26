@@ -27,7 +27,13 @@ return {
 				sections = {
 					lualine_a = { 'mode' },
 					lualine_b = { 'branch', 'diff', 'diagnostics' },
-					lualine_c = {},
+					lualine_c = {
+						{
+							"harpoon2",
+							color_active = { fg = "#FFB86C" },
+							no_harpoon = "Harpoon not loaded",
+						},
+					},
 					lualine_x = { function()
 						return require('screenkey').get_keys()
 					end,
